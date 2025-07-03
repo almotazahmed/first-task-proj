@@ -28,3 +28,5 @@ let arr = new PowerArr(1, 2, 39, 48, 2);
 console.log(arr);
 let filteredArr = arr.filter((x) => x > 10);
 console.log(filteredArr);
+
+console.log("hello world");
