@@ -43,3 +43,26 @@ let constructorBook = new Book("home alone", "motaz");
 console.log(constructorBook.describe());
 constructorBook.toggleReadStatus();
 console.log(constructorBook.describe());
+
+// 3. CLASS
+class classBook {
+  constructor (title, author) {
+    this.title = title;
+    this.author = author;
+    this.isRead = false;
+  }
+
+  toggleReadStatus () {
+    this.isRead = !this.isRead;
+  }
+
+  describe () {
+    return `"${ this.title }" By ${ this.author } [${ this.isRead ? "Read" : "Unread"
+      }]`;
+  }
+}
+
+let classBookObject = new classBook("home alone", "motaz");
+console.log(classBookObject.describe());
+classBookObject.toggleReadStatus();
+console.log(classBookObject.describe());
